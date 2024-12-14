@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+.container h1{
+   color: #282828;
+     margin-top: 55px; 
+    text-align: center;
+    font-size: 28px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   padding: 24px;
+}
+
+.form label{
+font-size: 16px;
+font-weight: 300;
+color: #000000;
+}
+.form input {
+    height: 54px;
+    border-radius: 6px;
+    border: 1px solid  #00000040;
+
+    outline: none;
+}
+.form button {
+    background-color: #28A745;
+    margin-top: 20px;
+height: 54px;
+border:  1px solid  #00000040; 
+border-radius: 8px;
+color: #ffffff;
+font-size: 18px;
+font-weight: 500;
+
+
+}
+
+.error1 {
+   
+    border: 1px solid  red;
+}
+.error {
+    color: red;
+}
+
+.OtpInput{
+    direction: ltr;
+    margin-left:100px;
+}

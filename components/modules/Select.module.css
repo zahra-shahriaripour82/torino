@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+.container h1{
+    font-size: 28px;
+    font-weight: 600;
+    color: #595959;
+}
+.container span{
+    font-size: 28px;
+    font-weight: 600;
+    color: #28A745;
+}
+.container .selectionBar{
+    display: flex;
+    justify-content:space-between;
+    width: 874px;
+margin-top: 30px;
+    border-radius: 20px;
+    border: 1px solid #00000026;
+    padding: 15px 18px 15px 10px;
+    background-color: #ffffff;
+    height: 71px;
+}
+.selectionBar .provice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C2C2C;
+}
+.container p{
+font-size: 20px;
+font-weight: 400;
+padding-right: 10px;
+
+
+}
+.selectionBar .destenation {
+    display: flex;
+    align-items: center; 
+     justify-content: center; 
+    color: #2C2C2C;
+    border-right: 1px solid #00000026;
+    padding-right: 10px;
+}
+
+/* .destenation P{
+    font-size: 20px;
+font-weight: 400;
+padding-right: 10px;
+} */
+.selectionBar .calender{
+    display: flex;
+    align-items: center; 
+     justify-content: center; 
+    color: #2C2C2C;
+    border-right: 1px solid #00000026;
+    padding-right: 10px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+  
+}
+.button button {
+    width: 190px;
+    height: 51px;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #28A745;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+   text-align: center;
+
+}

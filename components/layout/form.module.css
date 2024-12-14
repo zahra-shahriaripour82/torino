@@ -1,0 +1,28 @@
+.profile span{
+    color: #28A745;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 4px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    width: 166px;
+    border-radius: 8px;
+    padding: 4px;
+    border: 2px solid #28A745;
+ margin-left:150px ;   
+}
+.login{
+    display: flex;
+
+}
+.profile p{
+    font-size: 18px;
+    font-weight: 500;
+color: #28A745;
+    line-height: 29px;
+    /* padding:6px; */
+    margin-right: 6px;
+    margin-left: 6px;
+}
