@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 
 
@@ -5,10 +6,12 @@ import frame from "@/public/Images/frame.png"
 
 
 import styles from "./form.module.css"
-function Form({setIsOpen,isOpen}) {
-    
-    
-    const LoginHandler=()=>{console.log("zahra");
+function Form({setIsOpen}) {
+ 
+  
+    const LoginHandler=()=>{
+      console.log("zahra");
+
     }
     const RegisterHandler=()=>{
     setIsOpen(true)
@@ -20,7 +23,7 @@ function Form({setIsOpen,isOpen}) {
   return (
     <div className={styles.profile}>
 <div className={styles.login} onClick={LoginHandler}>
-<Image src={frame}/>
+<Image src={frame} alt="user-icon"/>
 
     <p >
     ورود

@@ -15,7 +15,7 @@ export default function Home() {
     <>
     <HomePage/>
     {/* <AuthForm/> */}
-    <AuthForm />
+    {/* <AuthForm /> */}
     <ModalContainer/>
     </>
   );

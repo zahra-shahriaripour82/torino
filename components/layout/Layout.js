@@ -15,7 +15,6 @@ import Message from "@/public/icons/Message";
 
 import styles from "./Layout.module.css"
 
-import Form from "./form.js"
 import AuthForm from "../modules/AuthForm";
 
 
@@ -53,7 +52,7 @@ function Layout({children}) {
     </ul>
 </div>
 <AuthForm/>
-{/* <Form/> */}
+{/* <Form onClick={e=>setIsOpen(true)}/> */}
 {/* <div className={styles.profile}>
 }
   <div className={styles.login} onClick={LoginHandler}>

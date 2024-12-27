@@ -6,6 +6,7 @@ import styles from "./Select.module.css"
 import Global from "@/public/icons/Global"
 import Calender from "@/public/icons/Calender"
 import SelectOption from "./SelectOption"
+import { useState } from "react"
 
 
 function Select() {
@@ -16,23 +17,28 @@ function Select() {
   // },[])
   // const city=[...cityName]
   // console.log(city);
-
-
+  const [selectCity,setSelectCity]=useState("مبدا")
+const [show,setShow]=useState(false)
 
   const proviceHandler =()=>{
-    console.log("handel");
-    <SelectOption/>
+    setShow(!show)
   }
   return (
+    
     <div className={styles.container}>
       <h1><span>تورینو</span> برگزار کننده بهترین تور های داخلی و خارجی </h1>
       <div className={styles.selectionBar}>
 
+      
         <div className={styles.provice}  onClick={proviceHandler}>
        
          <Location/>
-          <p >مبدا</p>
+          <p >{selectCity}</p>
+          <div>
+          {show && <SelectOption setSelectCity={setSelectCity}/>}
+          </div>
         </div>
+       
         <div className={styles.destenation}>
         
            <Global/>
@@ -47,6 +53,7 @@ function Select() {
         <button>جستجو</button>
       </div>
       </div>
+   
     </div>
   )
 }

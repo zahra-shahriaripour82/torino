@@ -1,3 +1,5 @@
+import BoxInfo from "../modules/BoxInfo";
+import Cards from "../modules/CardsPage";
 import Select from "../modules/Select"
 import Banner from "@/components/modules/Banner";
 
@@ -7,6 +9,8 @@ function HomePage() {
     <>
     <Banner/>
    <Select/>
+   <Cards/>
+   <BoxInfo/>
     </>
   )
 }

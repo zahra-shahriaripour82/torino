@@ -4,7 +4,7 @@ import Baner from "@/public/Images/Baner.png";
 function Banner() {
   return (
   
-    <Image src={Baner} width={1440} height={350} alt="Banner-page" />
+    <Image src={Baner} width={1440} height={350} alt="Banner-page"  />
   
   )
 }

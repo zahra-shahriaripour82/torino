@@ -20,12 +20,12 @@ export default function App({ Component, pageProps }) {
 
   // <main >
 
-   <Layout >
 <TanstackQueryProvider>
+   <Layout >
 <Toaster/>
     <Component {...pageProps} />
-</TanstackQueryProvider>
   </Layout>
+</TanstackQueryProvider>
   // </main>
   )
 
