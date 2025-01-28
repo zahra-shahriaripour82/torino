@@ -11,7 +11,8 @@
         position: absolute;
         display: flex;
         justify-content: center;
-        gap: 10px;
+  
+        gap: 15px;
         padding: 15px;
         flex-direction: column;
         width: 246px;
@@ -21,19 +22,63 @@
         background-color:#ffffff;
         margin-left: 125px;
         top: 75px;
-        left:20px;
+ left:-30px; 
+   
     
 }
-.menu  img{
-      width: 28px;
-      height: 28px;
-       background-color:#D9D9D9;
-       border-radius: 50%;
-       
-       /* font-size: 16px; */
+ .mobile{
+        width: 246px;
+        height: 44px;
+        background-color: #F4F4F4;
+        margin-right: -15px;
+        margin-top: -21px;
+        border-radius:11px 11px 0 0 ;
+padding-right: 15px;
+padding-top: 8px;
+
+ }
+.mobile .frame2 {
+width: 28px;
+height: 28px;
+border-radius: 50%;
+background-color: #D9D9D9;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  .phone {
+        position: relative;
+        top:-15px;
+      margin-right:23px;
+        font-size: 16px;
+        font-weight: 500;
+     
+}
+.phone a  {
+        color: #10411B;
 }
 .menu  a{
-padding-right: 15px;
-margin-top: -16px;
+ padding-right: 15px;
+/* margin-top: -30px;  */
+position: relative;
+top:-8px;
+}
+.profile{
+/* padding-top: 0px; */
+padding-bottom: 10px;
+border-bottom: 1px solid #0000001F;
+padding-right: 5px;
+}
+.profile a{
+        font-size: 14px;
+        font-weight: 400;
 
+}
+.Exit {
+padding-right: 8px;
+}
+.Exit a {
+        color: red;
+        font-size: 14px;
+        font-weight: 400px;
 }

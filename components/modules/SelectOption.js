@@ -1,4 +1,4 @@
-const originCity=[
+const originCity=[ 
   {name :"تهران",
     id:1,
   },
@@ -14,8 +14,13 @@ const originCity=[
 
 
 
+
 import styles from "./SelectOption.module.css"
+import Location from "@/public/icons/Location";
 function SelectOption({setSelectCity}) {
+  
+  // const {data}=useGetToursData();
+
   
    const optionHandler=(e)=>{
 setSelectCity(e.target.value)
@@ -29,14 +34,16 @@ setSelectCity(e.target.value)
   </div>
   {originCity.map(city=>(
    
-    <option key={city.id} onClick={optionHandler} value={city.name}>
-     
-    {city.name }</option>))}
-{
+    <option key={city.id} onClick={optionHandler} value={city.name} className={styles.opton}>
+     <Location/>
+    {city.name}
+    
+    </option>))}
 
-/* <option>تهران</option>
-<option>سنندج</option>
-<option>اصفهان</option> */}
+
+ {/* <option>تهران</option>
+ <option>سنندج</option>
+ <option>اصفهان</option>  */}
 </div>
   )
 }
@@ -46,4 +53,102 @@ export default SelectOption
 
 
 
+
+
+function Destenation() {
+  return (
+   dd
+  )
+}
+
+export  {Destenation};
+
 // export async function getStatic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { useGetToursData } from '@/core/services/queries'
+// import { useState } from 'react';
+
+
+// function SelectOption() {
+//   const [cityName,setCityName]=useState()
+//   // let origin=[]
+//   const {data}=useGetToursData();
+// const uniqeCity=new Set(cityName)
+//   return (
+//     <div>
+
+//       <select>
+//       {data?.data.map(tour=>
+//     //  {const cityName=tour.origin.name}
+ 
+//           <option key={tour.id} value={tour.origin.id}>
+             
+//            {uniqeCity}
+//           </option>
+//          )}
+//          </select>
+//     </div>
+//   )
+// }
+
+// export default SelectOption
+
+

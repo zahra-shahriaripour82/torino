@@ -1,12 +1,20 @@
 .container{
     width: 218px;
-    height: 251px;
+    /* height: 251px; */
+    height: fit-content;
     border-radius: 8px;
     border: 1px solid#00000026;
     background-color: #ffffff;
-    position: relative;
-    top: 170px;
-    left:60px;
+    /* z-index: 1; */
+    position: absolute;
+    bottom: -65px;
+    right: 330px;
+    /* left: 10px; */
+    /* top: 10px;
+    right: 290px; */
+    
+    /* left:60px; */
+    /* position: fixed; */
 }
 .title {
   border-radius: 8px 8px 0px 0;
@@ -17,4 +25,5 @@
  .container option {
     padding: 20px;
   border-bottom: 1px solid #00000026;
+  
  }

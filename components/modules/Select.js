@@ -24,7 +24,7 @@ const [show,setShow]=useState(false)
     setShow(!show)
   }
   return (
-    
+    <>
     <div className={styles.container}>
       <h1><span>تورینو</span> برگزار کننده بهترین تور های داخلی و خارجی </h1>
       <div className={styles.selectionBar}>
@@ -35,7 +35,6 @@ const [show,setShow]=useState(false)
          <Location/>
           <p >{selectCity}</p>
           <div>
-          {show && <SelectOption setSelectCity={setSelectCity}/>}
           </div>
         </div>
        
@@ -53,8 +52,10 @@ const [show,setShow]=useState(false)
         <button>جستجو</button>
       </div>
       </div>
-   
     </div>
+    {show && <SelectOption setSelectCity={setSelectCity}/>}
+ 
+      </>
   )
 }
 
