@@ -31,7 +31,7 @@ export const yekan = localFont({
   ],
 });
 
-
+                
 export const vazir = localFont({
   src: [
     {
