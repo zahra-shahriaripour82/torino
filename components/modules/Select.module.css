@@ -32,12 +32,13 @@ margin-top: 30px;
     align-items: center;
     justify-content: center;
     color: #2C2C2C;
+    /* width: 218.5; */
 }
 .container p{
 font-size: 20px;
 font-weight: 400;
 padding-right: 10px;
-
+width: 60px;
 
 }
 .selectionBar .destenation {

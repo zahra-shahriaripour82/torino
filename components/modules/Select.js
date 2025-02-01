@@ -5,7 +5,7 @@ import Location from "@/public/icons/Location"
 import styles from "./Select.module.css"
 import Global from "@/public/icons/Global"
 import Calender from "@/public/icons/Calender"
-import SelectOption from "./SelectOption"
+import SelectOption, { Destenation } from "./SelectOption"
 import { useState } from "react"
 
 
@@ -18,10 +18,16 @@ function Select() {
   // const city=[...cityName]
   // console.log(city);
   const [selectCity,setSelectCity]=useState("مبدا")
+  const [selectDestenationCity,setSelectDestenationCity]=useState("مقصد")
 const [show,setShow]=useState(false)
-
+const [showDes,setShowDes]=useState(false)
   const proviceHandler =()=>{
     setShow(!show)
+  }
+
+
+  const destenationHandler=()=>{
+   setShowDes(!showDes)
   }
   return (
     <>
@@ -38,10 +44,10 @@ const [show,setShow]=useState(false)
           </div>
         </div>
        
-        <div className={styles.destenation}>
+        <div className={styles.destenation} onClick={destenationHandler}>
         
            <Global/>
-            <p >مقصد</p>
+            <p>{selectDestenationCity}</p>
         </div>
         <div className={styles.calender}>
         
@@ -54,7 +60,7 @@ const [show,setShow]=useState(false)
       </div>
     </div>
     {show && <SelectOption setSelectCity={setSelectCity}/>}
- 
+    {showDes && <Destenation setSelectDestenationCity={setSelectDestenationCity}/>}
       </>
   )
 }

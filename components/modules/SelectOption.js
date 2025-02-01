@@ -10,11 +10,18 @@ const originCity=[
   }
 ]
 
+const DestenationCity=[
+  {
+    name:"سنندج",
+    id:"1"
+  }
+]
 
 
 
 
 
+import { useGetToursData } from "@/core/services/queries";
 import styles from "./SelectOption.module.css"
 import Location from "@/public/icons/Location";
 function SelectOption({setSelectCity}) {
@@ -35,15 +42,9 @@ setSelectCity(e.target.value)
   {originCity.map(city=>(
    
     <option key={city.id} onClick={optionHandler} value={city.name} className={styles.opton}>
-     <Location/>
     {city.name}
     
     </option>))}
-
-
- {/* <option>تهران</option>
- <option>سنندج</option>
- <option>اصفهان</option>  */}
 </div>
   )
 }
@@ -55,9 +56,27 @@ export default SelectOption
 
 
 
-function Destenation() {
+function Destenation({setSelectDestenationCity}) {
+  const {data}=useGetToursData();
+  // console.log(data);
+  const optionHandler=(e)=>{
+    setSelectDestenationCity(e.target.value)
+       }
   return (
-   dd
+    <div className={styles.containerDes}>
+    <div  className={styles.titleDes}>
+      <p>پرتردد</p>
+    
+    </div>
+    {data?.data.map(tour=>(
+     
+      <option key={tour.destination.id} onClick={optionHandler} value={tour.destination.name} className={styles.optonDes}>
+       <Location/>
+      {tour.destination.name}
+      
+      </option>))}
+      
+  </div>
   )
 }
 

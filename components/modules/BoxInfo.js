@@ -3,7 +3,7 @@
 import styles from "./BoxInfo.module.css";
 import carton from "@/public/Images/carton.png"
 import Call from "@/public/icons/Call";
-
+import Link from "next/link";
 
 
 
@@ -29,9 +29,14 @@ function BoxInfo() {
      021-1840 <Call/>
     </p>
 
-    <button>اطلاعات بیشتر</button>
-
+    <button>
+    {/* <Link href={"/contact-us"}> */}
+      اطلاعات بیشتر
+      {/* </Link> */}
+      
+    </button>
 </div>
+
 
     </div>
   )

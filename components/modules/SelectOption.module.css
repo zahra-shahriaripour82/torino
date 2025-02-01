@@ -1,15 +1,16 @@
 .container{
     width: 218px;
-    /* height: 251px; */
+    /* width: fit-content; */
     height: fit-content;
     border-radius: 8px;
     border: 1px solid#00000026;
     background-color: #ffffff;
-    /* z-index: 1; */
     position: absolute;
-    bottom: -65px;
+    bottom: -137px;
     right: 330px;
+    /* z-index: 1; */
     /* left: 10px; */
+    /* height: 251px; */
     /* top: 10px;
     right: 290px; */
     
@@ -27,3 +28,26 @@
   border-bottom: 1px solid #00000026;
   
  }
+
+ .containerDes{
+  width: 218px;
+  height: fit-content;
+  border-radius: 8px;
+  border: 1px solid#00000026;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -375px;
+  right: 550px;
+ }
+ .titleDes {
+  border-radius: 8px 8px 0px 0;
+    padding: 5px;
+    border-bottom: 1px solid #00000026;
+    background-color: #F8F8F8;
+}
+
+.containerDes option {
+  padding: 20px;
+border-bottom: 1px solid #00000026;
+
+}
