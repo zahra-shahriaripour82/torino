@@ -8,9 +8,11 @@ import SelectOption, { Destenation } from "./SelectOption";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-
-
-import DatePicker from "react-multi-date-picker"
+import DatePicker from "react-multi-date-picker";
+import persian_fa from "react-date-object/locales/persian_fa";
+import persian from "react-date-object/calendars/persian";
+import InputIcon from "react-multi-date-picker/components/input_icon";
+import "react-multi-date-picker/styles/colors/green.css";
 function Select() {
   // const [cityName,setCityName]=useState()
   // useEffect(()=>{
@@ -26,8 +28,7 @@ function Select() {
   const [openCalender, setOpenCalender] = useState(false);
   const { register, handleSubmit } = useForm();
 
-
-  const [value, setValue] = useState(new Date()); 
+  const [value, setValue] = useState(new Date());
 
   const proviceHandler = () => {
     setShow(!show);
@@ -46,8 +47,8 @@ function Select() {
   return (
     <>
       <div className={styles.container}>
-        <h1>
-          <span>تورینو</span> برگزار کننده بهترین تور های داخلی و خارجی{" "}
+        <h1 >
+          <span className={styles.titleTorino}>تورینو</span> برگزار کننده بهترین تور های داخلی و خارجی{" "}
         </h1>
         {/* <div className={styles.selectionBar}> */}
 
@@ -65,10 +66,29 @@ function Select() {
             <Global />
             <p {...register("destinationId")}>{selectDestenationCity}</p>
           </div>
-          <div className={styles.calender} onClick={CalenderHandler}>
-            {/* <Calender />
-            <p>تاریخ</p> */}
-     {/* <DatePicker value={value} onChange={setValue} />; */}
+          {/* onClick={CalenderHandler} */}
+          <div className={styles.calendar} >
+            {/* <Calender /> */}
+            {/* <p>تاریخ</p> */}
+
+            <DatePicker
+              value={value}
+              onChange={setValue}
+              render={<InputIcon />}
+              calendar={persian}
+              locale={persian_fa}
+              range
+              rangeHover
+              className="green"
+
+              style={{
+            
+                height: "24px",
+                borderRadius: "12px",
+                fontSize: "26px",
+                padding: "3px 10px"
+              }}
+            />
           </div>
 
           <div className={styles.button}>
