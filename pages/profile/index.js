@@ -1,4 +1,4 @@
-import AuthProdider from "@/components/provider/AuthProdider"
+import AuthProdider from "@/components/provider/AuthProvider"
 import ProfilePage from "@/components/templates/ProfilePage"
 
 

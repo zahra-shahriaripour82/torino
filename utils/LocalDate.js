@@ -20,7 +20,7 @@ return during
 
 }
 
-console.log(getDay("2024-12-10T00:00:00.000Z","2024-12-15T00:00:00.000Z"));
+// console.log(getDay("2024-12-10T00:00:00.000Z","2024-12-15T00:00:00.000Z"));
 
 
 export {convertToPersienDate,getDay}

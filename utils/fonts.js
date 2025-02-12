@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 export const yekan = localFont({
   src: [
     {
-      path: "../../../public/fonts/YekanBakh-Light.woff2",
+      path: "@/public/fonts/YekanBakh-Light.woff2",
       weight: "300",
       style: "normal",
     },

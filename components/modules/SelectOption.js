@@ -63,20 +63,26 @@ function Destenation({setSelectDestenationCity}) {
     setSelectDestenationCity(e.target.value)
        }
   return (
-    <div className={styles.containerDes}>
+
+
+    <div className={styles.containerDes} >
     <div  className={styles.titleDes}>
       <p>پرتردد</p>
     
     </div>
+    
+
+   
     {data?.data.map(tour=>(
-     
       <option key={tour.destination.id} onClick={optionHandler} value={tour.destination.name} className={styles.optonDes}>
        <Location/>
       {tour.destination.name}
       
       </option>))}
+    
       
   </div>
+  
   )
 }
 
@@ -92,7 +98,20 @@ export  {Destenation};
 
 
 
-
+{/* <div className={styles.containerDes}>
+    <div  className={styles.titleDes}>
+      <p>پرتردد</p>
+    
+    </div>
+    {data?.data.map(tour=>(
+     
+      <option key={tour.destination.id} onClick={optionHandler} value={tour.destination.name} className={styles.optonDes}>
+       <Location/>
+      {tour.destination.name}
+      
+      </option>))}
+      
+  </div> */}
 
 
 
